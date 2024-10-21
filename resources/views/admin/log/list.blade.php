@@ -13,7 +13,7 @@
 
 <div class="judul flex">
     <div>
-        <h1>Log Content</h1>
+        <h1>Log Presensi Pegawai</h1>
     </div>
 </div>
 <br>
@@ -26,11 +26,13 @@
         <thead>
             <tr>
                 <th scope="col">Nomer</th>
-                <th scope="col">Nama Table</th>
-                <th scope="col">Aksi</th>
-                <th scope="col">Deskripsi</th>
-                <th scope="col">Editor Admin</th>
-                <th scope="col">Perubahan Dibuat</th>
+                {{-- <th scope="col">Nama Table</th> --}}
+                {{-- <th scope="col">Aksi</th> --}}
+                {{-- <th scope="col">Deskripsi</th> --}}
+                <th scope="col">Nama Pegawai</th>
+                <th scope="col">Jam Datang</th>
+                <th scope="col">Jam Pulang</th>
+
 
                 {{-- <th scope="col">Updated At</th> --}}
 
@@ -43,11 +45,12 @@
             @foreach ($logs as $log)
             <tr>
                 <th scope="row">{{ $start++ }}</th>
-                <td>{{ $log->nama_table }}</td>
-                <td>{{ $log->type }}</td>
-                <td>{{ $log->deskripsi }}</td>
+                {{-- <td>{{ $log->nama_table }}</td> --}}
+                {{-- <td>{{ $log->type }}</td> --}}
+                {{-- <td>{{ $log->deskripsi }}</td> --}}
                 <td>{{ $log->namauser->name ?? ''}}</td>
                 <td>{{ $log->created_at }}</td>
+                <td>{{ $log->updated_at }}</td>
                 {{-- <td>{{ $log->updated_at }}</td> --}}
             </tr>
             @endforeach
