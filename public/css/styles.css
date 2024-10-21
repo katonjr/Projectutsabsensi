@@ -1,0 +1,55 @@
+.rows{
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog
+
+/* Content Container */
+.content-container {
+    margin-top: 20px;
+}
+
+.blog-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.blog-dates {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.blog-author {
+    font-weight: bold;
+}
+
+.blog-content {
+    margin-top: 20px;
+}
+
+.recent-blog {
+    margin-top: 20px;
+}
+
+/* For desktop view */
+@media (min-width: 992px) {
+    .recent-blog {
+        order: 2; /* Change the order to display recent blog on the right */
+    }
+}
+
+/* For mobile view */
+@media (max-width: 991.98px) {
+    .row {
+        flex-direction: column; /* Change direction to column for mobile view */
+    }
+    .recent-blog {
+        margin-top: 0; /* Remove top margin for recent blog in mobile view */
+    }
+}
+
+.tag{
+    color: #1ec6b6;
+}
